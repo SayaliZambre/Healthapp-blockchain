@@ -1,0 +1,57 @@
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    width: 100%;
+    background: rgba(0, 0, 255, 0.5); /* Blue color */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.overlay--remove {
+    opacity: 0;
+    z-index: -1;
+}
+
+.alertBox {
+    width: 400px;
+    padding: 30px 20px;
+    background-color: #fff; /* White background */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px 3px #ccc;
+    transition: transform 2s, opacity 1s;
+    z-index: 9;
+    opacity: 1;
+}
+
+.alertBox--remove {
+    top: -50%;
+    opacity: 0;
+    transition: transform 2s, opacity 1s;
+}
+
+h2 {
+    text-align: center;
+    color: #007bff; /* Blue color for headings */
+}
+
+.transactionHash {
+    text-align: center;
+    color: #333; /* Darker text color */
+}
+
+.transactionHashOut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
